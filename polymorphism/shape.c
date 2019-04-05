@@ -55,11 +55,13 @@ int16_t Shape_getY(Shape const * const me) {
 }
 
 /* Shape class implementations of its virtual functions... */
+/* 纯虚函数,子类必须实现相应的函数,该函数进制直接调用,声明为static,确保声明周期只在本文件*/
 static uint32_t Shape_area_(Shape const * const me) {
     assert(0); /* purely-virtual function should never be called */
     return 0U; /* to avoid compiler warnings */
 }
 
+/* 纯虚函数,子类必须实现相应的函数,该函数进制直接调用,声明为static,确保声明周期只在本文件*/
 static void Shape_draw_(Shape const * const me) {
     assert(0); /* purely-virtual function should never be called */
 }
